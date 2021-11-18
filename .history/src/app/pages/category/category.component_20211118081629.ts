@@ -33,16 +33,16 @@ export class CategoryComponent implements OnInit {
     },
     {
       _id: "60fa1fd81872c62d109adf90",
-      title: "Blue Stripe Stware Plate",
-      brand: "Kio",
-      price: 20,
+      title: "Blue Stripe Stoneware Plate",
+      brand: "Kiriko",
+      price: 40,
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at pu...",
-      image: "hand-painted-blue-flat-dish.jpg"
+      image: "blue-stripe-stoneware-plate.jpg"
     }
   ];
   load = () => {
-    this.products = this.productdata;
+    this.sub = this.productdata;
     // this.productService
     //   .getProducts("http://localhost:3000/products")
     //   .subscribe(res => {
@@ -53,6 +53,6 @@ export class CategoryComponent implements OnInit {
     this.cartService.addToCart({ product, quantity: 1 });
   };
   ngOnDestroy() {
-    // this.sub.unsubscribe();
+    this.sub.unsubscribe();
   }
 }

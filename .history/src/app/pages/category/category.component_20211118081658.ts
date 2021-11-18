@@ -33,12 +33,12 @@ export class CategoryComponent implements OnInit {
     },
     {
       _id: "60fa1fd81872c62d109adf90",
-      title: "Blue Stripe Stware Plate",
-      brand: "Kio",
-      price: 20,
+      title: "Blue Stripe Stoneware Plate",
+      brand: "Kiriko",
+      price: 40,
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at pu...",
-      image: "hand-painted-blue-flat-dish.jpg"
+      image: "blue-stripe-stoneware-plate.jpg"
     }
   ];
   load = () => {
